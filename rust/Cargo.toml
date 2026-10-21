@@ -1,0 +1,15 @@
+[package]
+name = "kourai"
+version = "0.1.0"
+edition = "2021"
+rust-version = "1.70"
+description = "Strict NDJSON line splitter: chunked bytes in, one parsed JSON value per line out; malformed lines are errors with line numbers."
+license = "MIT"
+authors = ["leisureist"]
+repository = "https://github.com/leisureist/Kourai"
+readme = "README.md"
+keywords = ["ndjson", "jsonl", "json-lines", "stream", "parser"]
+categories = ["parser-implementations", "encoding"]
+
+[dependencies]
+serde_json = "1"

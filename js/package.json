@@ -1,0 +1,21 @@
+{
+  "name": "kourai",
+  "version": "0.1.0",
+  "description": "Strict NDJSON line splitter: chunked input in, one parsed JSON value per line out; malformed lines are errors with line numbers.",
+  "keywords": ["ndjson", "jsonl", "json-lines", "stream", "parser"],
+  "license": "MIT",
+  "author": "leisureist",
+  "repository": { "type": "git", "url": "git+https://github.com/leisureist/Kourai.git", "directory": "js" },
+  "homepage": "https://github.com/leisureist/Kourai#readme",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": { ".": { "types": "./dist/index.d.ts", "default": "./dist/index.js" } },
+  "files": ["dist", "README.md", "LICENSE"],
+  "engines": { "node": ">=18" },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "npm run build && node --test test/*.test.js",
+    "prepublishOnly": "npm test"
+  }
+}
